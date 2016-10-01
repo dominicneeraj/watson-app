@@ -64,7 +64,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/translate"
-        android:enabled="false" />
+        android:enabled="false"
+        android:elevation="12dp"
+        android:background="#fab"/>
+
+    <TextView
+        android:id="@+id/translated_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,10 +81,11 @@
         <ImageButton
             android:id="@+id/play"
             android:layout_width="wrap_content"
-            android:layout_height="118dp"
+            android:layout_height="74dp"
             android:src="@drawable/ic_play"
             android:contentDescription="@string/play"
-            android:layout_weight="0.26" />
+            android:background="#217"
+            android:layout_weight="0.62" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,13 +95,6 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/translated_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
 
 
 </LinearLayout>
